@@ -1,5 +1,12 @@
-stage('display message') {
-    steps {
-        echo 'Hello from github'
+pipeline {
+    agent any
+
+    stages {
+        stage('display message') {
+            steps {
+                echo 'Hello from github'
+            }
+        }
     }
 }
+``
